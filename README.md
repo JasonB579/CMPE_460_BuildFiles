@@ -32,5 +32,5 @@ Each exercise directory with your code needs to have both the Makefile and the .
 3. To view the output of the code (comparable to using PuTTY on a serial port)
 	1. Run `ls /dev`
 	2. There should be an entry that looks similar to `ttyACM0` (the final character could be a digit 0-9)
-	3. Run `sudo screen /dev/ttyACM\<number\>`
+	3. Run `sudo screen /dev/ttyACM<number>`
 		* To exit `screen` type `C-a \` 
