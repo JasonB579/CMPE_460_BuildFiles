@@ -29,7 +29,7 @@ git clone https://github.com/0xc0170/kinetis_klxx_gcc.git ide_path
 
 echo ""
 echo "--------------------Managing udev rules--------------------"
-cp ./udev_rules/45-mbed_debugger.rules 50-tty_cmsis.rules 99-hidraw-permissions.rules /etc/udev/rules.d/
+cp ./udev_rules/45-mbed_debugger.rules ./udev_rules/50-tty_cmsis.rules ./udev_rules/99-hidraw-permissions.rules /etc/udev/rules.d/
 sudo groupadd plugdev
 sudo usermod -aG plugdev $USER
 sudo udevadm control --reload-rules
@@ -39,7 +39,7 @@ echo ""
 echo "--------------------Moving other required files--------------------"
 sudo cp ./frdm-k64f.cfg /usr/share/openocd/scripts/board/frdm-k64f.cfg
 cp ./.gdbinit ide_path
-cp ide_path/kinetis_klxx_gcc/gpio_demo_frdmk64f/Makefile ide_path
+cp ./Makefile ide_path
 echo ""
 echo "Installation should be completed. A restart may be required for certain changes to take effect. Please consult the README for further instructions on use."
 echo ""
