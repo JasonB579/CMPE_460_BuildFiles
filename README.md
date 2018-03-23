@@ -6,10 +6,9 @@ Before using the installer, the following packages need to be installed:
 ```
 gcc
 openocd
-arm-none-eabi-gcc
-arm-none-eabi-gdc
-arm-none-eabi-newlib
-cmake
+arm-none-eabi-gdb (called gdb-arm-none-eabi in Ubuntu with apt)
+arm-none-eabi-gcc (called gcc-arm-none-eabi in Ubuntu with apt - combined with gdb-arm-none-eabi)
+arm-none-eabi-newlib (combined with gdb-arm-none-eabi)
 screen
 ```
 
