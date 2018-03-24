@@ -25,7 +25,7 @@ read -p "Exact path to top-level folder containing IDE Exercises: " ide_path
 
 echo ""
 echo "--------------------Cloning kinetis_klxx_gcc repo--------------------"
-git clone https://github.com/0xc0170/kinetis_klxx_gcc.git ${ide_path}
+git clone https://github.com/0xc0170/kinetis_klxx_gcc.git ${ide_path}/kinetis_klxx_gcc
 
 echo ""
 echo "--------------------Managing udev rules--------------------"
