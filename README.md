@@ -2,19 +2,19 @@
 This project exists for the CMPE 460 Lab at RIT. It is an alternative to using Keil  MicroVision for people with *NIX based systems (Linux and Mac).
 
 ## Dependencies
-Before using the installer, the following packages need to be installed:
+If you are using either an Arch or Debian-based distribution of Linux, the installer script should install all necessary dependent packages. Otherwise, the following packages will need to be manually installed before you can use this for building to the board (these might go by different names depending on the distribution. The package names below are for Arch or Debian).
 ```
 gcc
 openocd
-arm-none-eabi-gdb (called gdb-arm-none-eabi in Ubuntu with apt)
-arm-none-eabi-gcc (called gcc-arm-none-eabi in Ubuntu with apt - combined with gdb-arm-none-eabi)
-arm-none-eabi-newlib (combined with gdb-arm-none-eabi)
+arm-none-eabi-gdb (called gdb-arm-none-eabi in Debian)
+arm-none-eabi-gcc (called gcc-arm-none-eabi in Debian - combined with gdb-arm-none-eabi)
+arm-none-eabi-newlib (combined with gdb-arm-none-eabi in Debian)
 screen
 ```
 
 ## How To Use
 ### Installing
-Once all of the dependencies have been installed, the `install.sh` file should be run. It will move several necessary files into place and will change certain permissions so that everything will run smoothly.
+Once all of the dependencies have been installed, if necessary, the `install.sh` file should be run. It will install necessary packages if in the correct distributions and move several other necessary files into place. It will also change certain permissions so that everything will run smoothly (these are the `udev_rules`).
 
 ### Filesystem Setup
 First, the file heirarchy needs to be set up properly (at least for ease of use).
